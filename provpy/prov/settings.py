@@ -13,6 +13,8 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+WSGI_APPLICATION = "prov.wsgi.application" 
+
 DATABASES = {
     'default': {
       'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
@@ -147,7 +149,7 @@ PUBLIC_GROUP_ID = -1
 
 AUTH_PROFILE_MODULE = 'server.UserProfile'
 
-LOGIN_REDIRECT_URL = '/prov/home'
+LOGIN_REDIRECT_URL = '/prov'
 
 LOGIN_URL = '/prov/login'
 # A sample logging configuration. The only tangible logging
