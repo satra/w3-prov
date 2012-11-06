@@ -6,7 +6,7 @@
 {% block content %}
 		<div id="Overview" class="anchorOffset"></div>
 		<h3 id="Overview">API Overview</h3>
-		<p>The Provenance Server's API provides a RESTfull web service for
+		<p>The Provenance Server's API provides a RESTful web service for
 		storage and access of provenance bundles in JSON format as specified 
 		<a href="http://users.ecs.soton.ac.uk/tdh/json/">here</a> 
 		for the W3C's Provenance Data Model. Via the API, any client can manipulate bundles
@@ -15,26 +15,22 @@
 		<div id="Authentication" class="anchorOffset"></div>
 		<h3>API Key Authentication</h3>
 		<p>The API supports Basic Http Authentication with user credential in the form of username and API Key.
-		For this reason we suggest using the API Key Authenitcation only with secure connection(https/ssl/...).
-		The user credentials are in the form of username, chosen by the client at registration, 
-		and an auto generated API key*. Those two credential are yours to protect from any 
-		possible abuse. When you log in to the webUI developed for managing the client's accounts
-		you can view your API key by going from the top navigation bar to 'API Key'. For security
-		reasons we have provided a way of generating new API key on request of the client, in case
-		the API key has been compromised. You can and delete your API key which will lead to 
-		"locking out" your account out of the API.
-		 </br></br>
+		For this reason we suggest using the API Key Authentication only with a secured connection (i.e. https).
+		The user credential is in the form of the username, chosen by the client at registration, 
+		and an auto generated API key*. When you log in your account,
+		you can view your API key by clicking on 'API Key' (on the top navigation bar). For security
+		reasons, you can generate a new API key  in case the existing key
+		has been compromised. 
+		</br></br>
 		* Note that the user credential here mentioned (username and API key) are not the same as 
-		the credential used for the webUI. The username is the same, but on registration the client
-		creates his own separate password for accessing the webUI, which is different from the API key.
-		You can assume that the webUI is like admin panel for managing your account and the API is the 
-		actual RESTfull service on the server. 
+		the credential used for this web page. The username is the same, but on registration the client
+		creates his own separate password for accessing the server, which is different from the API key.
 		</p>
 		<div id="Usage" class="anchorOffset"></div>
 		<h3>Basic Usage</h3>
-		<p>The API supports all of the RESTfull methods PUT/POST/GET/DELETE.
-		Whenever trough your application you should query the server at the api
-		url, which normally will be in the form https://'domain'/'API url'/'resource name',
+		<p>The API supports all of the RESTful methods PUT/POST/GET/DELETE.
+		You should query the server at the API
+		url, which is in the following form: https://'domain'/'API url'/'resource name',
 		where 'domain' is the domain address of the server(www.example.com),
 		the API url is in the form 'api/vX' where X is version used(api/v0),
 		the resource name is the Bundles name chosen by the service provider(account).

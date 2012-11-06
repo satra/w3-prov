@@ -4,14 +4,6 @@
 {% block title %}PROVServer: Search Help{% endblock %}
 {% block header %}<h1>Documentation: Search and Filtering</h1>{% endblock %}
 {% block content %}
-		<div id="Overview" class="anchorOffset"></div>
-		<h3>The API Overview</h3>
-		<p>The PROV-JSON API provides a RESTfull web service for
-		storage and access of provenance bundles in JSON format as specified 
-		<a href="http://users.ecs.soton.ac.uk/tdh/json/">here</a> 
-		for the W3C's Provenance Data Model. Trough the API any client can manipulate bundles
-		stored on a server and explore and retrieve information from other clients.
-		</p>
 		<div id="Search" class="anchorOffset"></div>
 		<h3>Searching</h3>
 		<p>The PROV Server supports searching capabilities both on the webUI and on trough
@@ -155,7 +147,6 @@ headers: [('Authorization' : auth)]
 {% block sidebar %}
 <h3>Contents</h3>
 <ul>
-	<li><h5><a href="#Overview">Overview</a></h5></li>
 	<li><h5><a href="#Search">Searching</a></h5>
 		<ul>
 			<li><h5><a href="#name">By Name</a></h5></li>
